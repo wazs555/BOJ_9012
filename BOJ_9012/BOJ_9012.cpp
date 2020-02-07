@@ -34,12 +34,12 @@ int main()
 	char string[55];
 	int length, n;
 
-	scanf("%d", &n); // ¸í·ÉÀÇ °³¼ö ÀÔ·Â
+	scanf("%d", &n); // ëª…ë ¹ì˜ ê°œìˆ˜ ì…ë ¥
 
 	for (int i = 0; i < n; i++)
 	{
-		S s1; // ±¸Á¶Ã¼ ¼±¾ğ
-		int k = -5;
+		S s1; // êµ¬ì¡°ì²´ ì„ ì–¸
+		boolean falg = true;
 		scanf("%s", string);
 		length = strlen(string);
 		
@@ -52,11 +52,11 @@ int main()
 			else
 			{
 				k = s1.pop();
-				if (k == -1) break;
+				if (flag == false) break;
 
 			}
 		}
-		if (k == -1)
+		if (flag == false)
 		{
 			continue;
 		}
